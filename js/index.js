@@ -9,10 +9,22 @@
 //  var tipBottom = document.getElementsByClassName("carousel-item");
 //  var tooltipBottom = new bootstrap.Tooltip(carousel-item, { placement : "bottom" });
 
-// Mega Menu
-function changeImg(imgchanger) {
-  document.getElementById("slider").src = imgchanger;
+// Mega Menu 
+function changeImg(img) {
+  document.getElementById("change_Image").src = img;
 }
+
+// Products code- when we click on image, same image goes to single product page 
+
+
+// document.getElementById("product_image").onclick = changeImg1();
+
+function changeImg1(){
+  document.getElementById("product_image").src = document.getElementById("get_product_image").src;
+  // document.getElementById("get_product_image").style.border = "14px solid red";
+
+}  
+
 
 // function show() {
 //   var image1 = document.getElementById('showImage1');
